@@ -1,0 +1,2149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>PermutationRepository - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="PermutationRepository.html">PermutationRepository</a><ul class='methods'><li data-type='method'><a href="PermutationRepository.html#commutator">commutator</a></li><li data-type='method'><a href="PermutationRepository.html#conjugate">conjugate</a></li><li data-type='method'><a href="PermutationRepository.html#get">get</a></li><li data-type='method'><a href="PermutationRepository.html#getAsCycles">getAsCycles</a></li><li data-type='method'><a href="PermutationRepository.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationRepository.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationRepository.html#register">register</a></li></ul></li><li><a href="PermutationSet.html">PermutationSet</a><ul class='methods'><li data-type='method'><a href="PermutationSet.html#calculateOrbit">calculateOrbit</a></li><li data-type='method'><a href="PermutationSet.html#difference">difference</a></li><li data-type='method'><a href="PermutationSet.html#equals">equals</a></li><li data-type='method'><a href="PermutationSet.html#generateGroupFromThis">generateGroupFromThis</a></li><li data-type='method'><a href="PermutationSet.html#get">get</a></li><li data-type='method'><a href="PermutationSet.html#intersection">intersection</a></li><li data-type='method'><a href="PermutationSet.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationSet.html#isAbelian">isAbelian</a></li><li data-type='method'><a href="PermutationSet.html#isSuperSetOf">isSuperSetOf</a></li><li data-type='method'><a href="PermutationSet.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationSet.html#rightCosetDecomposition">rightCosetDecomposition</a></li><li data-type='method'><a href="PermutationSet.html#slice">slice</a></li><li data-type='method'><a href="PermutationSet.html#toString">toString</a></li><li data-type='method'><a href="PermutationSet.html#union">union</a></li><li data-type='method'><a href="PermutationSet.html#.identity">identity</a></li></ul></li><li><a href="QuotientGroupMap.html">QuotientGroupMap</a><ul class='methods'><li data-type='method'><a href="QuotientGroupMap.html#lift">lift</a></li></ul></li><li><a href="SchreierSimsAlgorithm.html">SchreierSimsAlgorithm</a><ul class='methods'><li data-type='method'><a href="SchreierSimsAlgorithm.html#contains">contains</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getGeneratorsAsPermutationSet">getGeneratorsAsPermutationSet</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getStabilizer">getStabilizer</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#isTransitive">isTransitive</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#siftAndInsert">siftAndInsert</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#toString">toString</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#.compute">compute</a></li></ul></li><li><a href="VisualizerCayleyForceSimulator.html">VisualizerCayleyForceSimulator</a><ul class='methods'><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#getPlotlyFrame">getPlotlyFrame</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#tick">tick</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#warmup">warmup</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="IntSetUtils.html">IntSetUtils</a><ul class='methods'><li data-type='method'><a href="IntSetUtils.html#.difference">difference</a></li><li data-type='method'><a href="IntSetUtils.html#.has">has</a></li><li data-type='method'><a href="IntSetUtils.html#.intersection">intersection</a></li><li data-type='method'><a href="IntSetUtils.html#.sortAndUnique">sortAndUnique</a></li><li data-type='method'><a href="IntSetUtils.html#.union">union</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#analyzeGenerators">analyzeGenerators</a></li><li><a href="global.html#areIsomorphic">areIsomorphic</a></li><li><a href="global.html#calcApproxOrder">calcApproxOrder</a></li><li><a href="global.html#createAlternating">createAlternating</a></li><li><a href="global.html#createCyclic">createCyclic</a></li><li><a href="global.html#createDihedral">createDihedral</a></li><li><a href="global.html#createDirectProduct">createDirectProduct</a></li><li><a href="global.html#createFromCycleStrings">createFromCycleStrings</a></li><li><a href="global.html#createFromRawArrays">createFromRawArrays</a></li><li><a href="global.html#createIcosahedral">createIcosahedral</a></li><li><a href="global.html#createKleinFour">createKleinFour</a></li><li><a href="global.html#createOctahedral">createOctahedral</a></li><li><a href="global.html#createQuaternion">createQuaternion</a></li><li><a href="global.html#createSymmetric">createSymmetric</a></li><li><a href="global.html#createTetrahedral">createTetrahedral</a></li><li><a href="global.html#createTrivial">createTrivial</a></li><li><a href="global.html#decomposeToCycles">decomposeToCycles</a></li><li><a href="global.html#findCoxeterLikeGenerators">findCoxeterLikeGenerators</a></li><li><a href="global.html#findLowOrderGenerators">findLowOrderGenerators</a></li><li><a href="global.html#generateCayleyGraphForPlotly">generateCayleyGraphForPlotly</a></li><li><a href="global.html#generateGroup">generateGroup</a></li><li><a href="global.html#generateMultiplicationTable">generateMultiplicationTable</a></li><li><a href="global.html#generateNames">generateNames</a></li><li><a href="global.html#getCommutatorSubgroup">getCommutatorSubgroup</a></li><li><a href="global.html#getLowerCentralSeries">getLowerCentralSeries</a></li><li><a href="global.html#getMixedCommutatorSubgroup">getMixedCommutatorSubgroup</a></li><li><a href="global.html#getNormalClosure">getNormalClosure</a></li><li><a href="global.html#getQuotientStructure">getQuotientStructure</a></li><li><a href="global.html#getSylowSubgroup">getSylowSubgroup</a></li><li><a href="global.html#globalRepo">globalRepo</a></li><li><a href="global.html#isNilpotent">isNilpotent</a></li><li><a href="global.html#isNormal">isNormal</a></li><li><a href="global.html#isSimple">isSimple</a></li><li><a href="global.html#isSolvable">isSolvable</a></li><li><a href="global.html#isSubgroup">isSubgroup</a></li><li><a href="global.html#parseCycles">parseCycles</a></li><li><a href="global.html#resetGlobalRepo">resetGlobalRepo</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">PermutationRepository</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+            PermutationRepository
+        
+        </h2>
+        
+            <div class="class-description usertext"><p>Manages and stores unique permutations using a memory-optimized approach.
+It provides a global repository (<code>globalRepo</code>) to register permutations, assign unique IDs,
+and retrieve their data efficiently. It uses a trie-like structure for fast lookup
+and a flat Int32Array for permutation storage, minimizing GC overhead.
+The repository dynamically expands its capacity and can upgrade its <code>globalDegree</code>
+if permutations with larger degrees are registered.</p></div>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="PermutationRepository"><span class="type-signature"></span>new PermutationRepository<span class="signature">(initialDegree<span class="signature-attributes">opt</span>, initialPermCapacity<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line26">line 26</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>initialDegree</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>4</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>The initial degree (number of points) for permutations.
+The repository will automatically expand if permutations with higher degrees are registered.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>initialPermCapacity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>1024</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>The initial capacity for storing permutations.
+The capacity will automatically expand as more unique permutations are registered.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="PermutationRepository.html">PermutationRepository</a></dt>
+            <dd></dd>
+        </dl>
+    
+    
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="count"><span class="type-signature"></span>count<span class="type-signature"> :number</span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>The number of unique permutations currently stored in the repository.
+Also serves as the next available ID for a new permutation.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line45">line 45</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>The number of unique permutations currently stored in the repository.
+Also serves as the next available ID for a new permutation.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="globalDegree"><span class="type-signature"></span>globalDegree<span class="type-signature"> :number</span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>The current maximum degree of all permutations stored in the repository.
+Auto-expands as larger permutations are registered.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>The current maximum degree of all permutations stored in the repository.
+Auto-expands as larger permutations are registered.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="identity"><span class="type-signature type-signature-readonly">(readonly) </span>identity<span class="type-signature"> :number</span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>The unique ID for the identity permutation. This is always 0.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line96">line 96</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>The unique ID for the identity permutation. This is always 0.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="permBuffer"><span class="type-signature"></span>permBuffer<span class="type-signature"> :Int32Array</span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>A flat Int32Array that stores the actual permutation data.
+Each permutation of <code>globalDegree</code> size occupies <code>globalDegree</code> contiguous slots.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line62">line 62</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>A flat Int32Array that stores the actual permutation data.
+Each permutation of <code>globalDegree</code> size occupies <code>globalDegree</code> contiguous slots.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Int32Array</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="permCapacity"><span class="type-signature"></span>permCapacity<span class="type-signature"> :number</span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>The current allocated capacity for storing permutations.
+This defines the maximum number of unique permutations that can be stored
+before the <code>permBuffer</code> needs to be expanded.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line56">line 56</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>The current allocated capacity for storing permutations.
+This defines the maximum number of unique permutations that can be stored
+before the <code>permBuffer</code> needs to be expanded.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="trieBuffer"><span class="type-signature"></span>trieBuffer<span class="type-signature"> :Int32Array</span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>A flat Int32Array representing the memory arena for the trie nodes.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line80">line 80</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>A flat Int32Array representing the memory arena for the trie nodes.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Int32Array</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="trieFreePtr"><span class="type-signature"></span>trieFreePtr<span class="type-signature"> :number</span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Pointer to the next available slot in the <code>trieBuffer</code> for allocating a new node.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line85">line 85</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Pointer to the next available slot in the <code>trieBuffer</code> for allocating a new node.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="trieNodeSize"><span class="type-signature"></span>trieNodeSize<span class="type-signature"> :number</span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>The size of each node in the trie buffer.
+A node stores an ID and <code>globalDegree</code> child pointers.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line75">line 75</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>The size of each node in the trie buffer.
+A node stores an ID and <code>globalDegree</code> child pointers.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="commutator"><span class="type-signature"></span>commutator<span class="signature">(idA, idB)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Computes the commutator of two permutations: <code>[idA, idB] = idA^-1 * idB^-1 * idA * idB</code>.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line381">line 381</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>idA</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the first permutation (a).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>idB</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the second permutation (b).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The ID of the resulting commutator permutation.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="conjugate"><span class="type-signature"></span>conjugate<span class="signature">(g, h)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Computes the conjugate of permutation <code>h</code> by <code>g</code>: <code>g * h * g^-1</code>.
+This operation results in a permutation that has the same cycle structure as <code>h</code>.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line369">line 369</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>g</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the conjugating permutation (g).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>h</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the permutation to be conjugated (h).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The ID of the resulting conjugated permutation (g * h * g^-1).</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(id)</span><span class="type-signature"> &rarr; {Int32Array}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Retrieves the permutation data for a given ID.
+Returns a zero-copy view (subarray) of the internal <code>permBuffer</code>.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line207">line 207</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The unique ID of the permutation to retrieve.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A subarray representing the permutation (e.g., <code>[0, 1, 2]</code>).</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Int32Array</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getAsCycles"><span class="type-signature"></span>getAsCycles<span class="signature">(id)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Retrieves the permutation for a given ID and converts it into a 1-based cycle notation string.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line217">line 217</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The unique ID of the permutation.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The cycle notation string (e.g., &quot;(1 2 3)(4 5)&quot;). Returns &quot;()&quot; for the identity permutation.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="inverse"><span class="type-signature"></span>inverse<span class="signature">(id)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Computes the inverse of a given permutation ID.
+If the inverse has already been registered, its ID is retrieved; otherwise, it's computed and registered.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line314">line 314</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the permutation to invert.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The ID of the inverse permutation.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="multiply"><span class="type-signature"></span>multiply<span class="signature">(idA, idB)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Multiplies two permutations, <code>idA</code> and <code>idB</code>, according to the convention (A * B)(x) = A(B(x)).
+This means permutation <code>idB</code> is applied first, then <code>idA</code>.
+The resulting permutation is registered, and its ID is returned.
+Exposed as Public API for solvers.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line339">line 339</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>idA</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the first permutation (A).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>idB</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the second permutation (B).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The ID of the resulting permutation (A * B).</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="register"><span class="type-signature"></span>register<span class="signature">(rawPerm)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Registers a permutation (or retrieves its existing ID if already registered).
+If the input permutation's degree is greater than the current <code>globalDegree</code>,
+the repository will automatically upgrade its degree.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="permutation-repository.js.html">permutation-repository.js</a>, <a href="permutation-repository.js.html#line149">line 149</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>rawPerm</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ArrayLike.&lt;number></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The permutation to register, represented as an array-like object (e.g., <code>[0, 2, 1]</code>).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The unique ID assigned to the permutation.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Tue Feb 03 2026 12:25:57 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

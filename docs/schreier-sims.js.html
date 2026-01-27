@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>schreier-sims.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="PermutationRepository.html">PermutationRepository</a><ul class='methods'><li data-type='method'><a href="PermutationRepository.html#commutator">commutator</a></li><li data-type='method'><a href="PermutationRepository.html#conjugate">conjugate</a></li><li data-type='method'><a href="PermutationRepository.html#get">get</a></li><li data-type='method'><a href="PermutationRepository.html#getAsCycles">getAsCycles</a></li><li data-type='method'><a href="PermutationRepository.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationRepository.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationRepository.html#register">register</a></li></ul></li><li><a href="PermutationSet.html">PermutationSet</a><ul class='methods'><li data-type='method'><a href="PermutationSet.html#calculateOrbit">calculateOrbit</a></li><li data-type='method'><a href="PermutationSet.html#difference">difference</a></li><li data-type='method'><a href="PermutationSet.html#equals">equals</a></li><li data-type='method'><a href="PermutationSet.html#generateGroupFromThis">generateGroupFromThis</a></li><li data-type='method'><a href="PermutationSet.html#get">get</a></li><li data-type='method'><a href="PermutationSet.html#intersection">intersection</a></li><li data-type='method'><a href="PermutationSet.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationSet.html#isAbelian">isAbelian</a></li><li data-type='method'><a href="PermutationSet.html#isSuperSetOf">isSuperSetOf</a></li><li data-type='method'><a href="PermutationSet.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationSet.html#rightCosetDecomposition">rightCosetDecomposition</a></li><li data-type='method'><a href="PermutationSet.html#slice">slice</a></li><li data-type='method'><a href="PermutationSet.html#toString">toString</a></li><li data-type='method'><a href="PermutationSet.html#union">union</a></li><li data-type='method'><a href="PermutationSet.html#.identity">identity</a></li></ul></li><li><a href="QuotientGroupMap.html">QuotientGroupMap</a><ul class='methods'><li data-type='method'><a href="QuotientGroupMap.html#lift">lift</a></li></ul></li><li><a href="SchreierSimsAlgorithm.html">SchreierSimsAlgorithm</a><ul class='methods'><li data-type='method'><a href="SchreierSimsAlgorithm.html#contains">contains</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getGeneratorsAsPermutationSet">getGeneratorsAsPermutationSet</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getStabilizer">getStabilizer</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#isTransitive">isTransitive</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#siftAndInsert">siftAndInsert</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#toString">toString</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#.compute">compute</a></li></ul></li><li><a href="VisualizerCayleyForceSimulator.html">VisualizerCayleyForceSimulator</a><ul class='methods'><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#getPlotlyFrame">getPlotlyFrame</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#tick">tick</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#warmup">warmup</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="IntSetUtils.html">IntSetUtils</a><ul class='methods'><li data-type='method'><a href="IntSetUtils.html#.difference">difference</a></li><li data-type='method'><a href="IntSetUtils.html#.has">has</a></li><li data-type='method'><a href="IntSetUtils.html#.intersection">intersection</a></li><li data-type='method'><a href="IntSetUtils.html#.sortAndUnique">sortAndUnique</a></li><li data-type='method'><a href="IntSetUtils.html#.union">union</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#analyzeGenerators">analyzeGenerators</a></li><li><a href="global.html#areIsomorphic">areIsomorphic</a></li><li><a href="global.html#calcApproxOrder">calcApproxOrder</a></li><li><a href="global.html#createAlternating">createAlternating</a></li><li><a href="global.html#createCyclic">createCyclic</a></li><li><a href="global.html#createDihedral">createDihedral</a></li><li><a href="global.html#createDirectProduct">createDirectProduct</a></li><li><a href="global.html#createFromCycleStrings">createFromCycleStrings</a></li><li><a href="global.html#createFromRawArrays">createFromRawArrays</a></li><li><a href="global.html#createIcosahedral">createIcosahedral</a></li><li><a href="global.html#createKleinFour">createKleinFour</a></li><li><a href="global.html#createOctahedral">createOctahedral</a></li><li><a href="global.html#createQuaternion">createQuaternion</a></li><li><a href="global.html#createSymmetric">createSymmetric</a></li><li><a href="global.html#createTetrahedral">createTetrahedral</a></li><li><a href="global.html#createTrivial">createTrivial</a></li><li><a href="global.html#decomposeToCycles">decomposeToCycles</a></li><li><a href="global.html#findCoxeterLikeGenerators">findCoxeterLikeGenerators</a></li><li><a href="global.html#findLowOrderGenerators">findLowOrderGenerators</a></li><li><a href="global.html#generateCayleyGraphForPlotly">generateCayleyGraphForPlotly</a></li><li><a href="global.html#generateGroup">generateGroup</a></li><li><a href="global.html#generateMultiplicationTable">generateMultiplicationTable</a></li><li><a href="global.html#generateNames">generateNames</a></li><li><a href="global.html#getCommutatorSubgroup">getCommutatorSubgroup</a></li><li><a href="global.html#getLowerCentralSeries">getLowerCentralSeries</a></li><li><a href="global.html#getMixedCommutatorSubgroup">getMixedCommutatorSubgroup</a></li><li><a href="global.html#getNormalClosure">getNormalClosure</a></li><li><a href="global.html#getQuotientStructure">getQuotientStructure</a></li><li><a href="global.html#getSylowSubgroup">getSylowSubgroup</a></li><li><a href="global.html#globalRepo">globalRepo</a></li><li><a href="global.html#isNilpotent">isNilpotent</a></li><li><a href="global.html#isNormal">isNormal</a></li><li><a href="global.html#isSimple">isSimple</a></li><li><a href="global.html#isSolvable">isSolvable</a></li><li><a href="global.html#isSubgroup">isSubgroup</a></li><li><a href="global.html#parseCycles">parseCycles</a></li><li><a href="global.html#resetGlobalRepo">resetGlobalRepo</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">schreier-sims.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileoverview Schreier-Sims Algorithm (SSA) Implementation.
+ * 
+ * A high-performance engine for computing the Base and Strong Generating Set (BSGS)
+ * of a permutation group. This implementation is designed for the `group-engine` ecosystem,
+ * leveraging the global PermutationRepository for efficient memory management.
+ * 
+ * KEY FEATURES:
+ * - **Incremental Construction**: Dynamically builds the BSGS as generators are added.
+ * - **Memory Optimization**: Uses flat Int32Arrays from the repository via direct heap access.
+ * - **Dynamic Degree Handling**: Adapts automatically if the underlying repository expands.
+ * - **Transversal Maps**: Uses O(1) maps for orbit representatives.
+ * 
+ * ALGORITHM:
+ * Implements a variant of Knuth's incremental Schreier-Sims algorithm.
+ * It maintains a chain of stabilizers:
+ * G = G^(0) >= G^(1) >= ... >= G^(k) = {e}
+ * where G^(i) stabilizes the first i points of the base.
+ */
+
+import { globalRepo } from './permutation-repository.js';
+import { PermutationSet } from './group-engine.js';
+
+/**
+ * A high-performance engine for computing the Base and Strong Generating Set (BSGS)
+ * of a permutation group. This implementation is designed for the `group-engine` ecosystem,
+ * leveraging the global PermutationRepository for efficient memory management.
+ */
+export class SchreierSimsAlgorithm {
+    /**
+     * Constructs a new Schreier-Sims Algorithm instance.
+     * The instance can be initialized with an optional `initialBase` to prioritize certain points in the base.
+     * @param {number[]} [initialBase=[]] - An optional array of points to form the initial base. These points will be stabilized first.
+     */
+    constructor(initialBase = []) {
+        this.repo = globalRepo;
+        
+        /** 
+         * The Base sequence B = [b_1, b_2, ..., b_k].
+         * This is the sequence of points that define the stabilizer chain.
+         * @type {number[]}
+         * @protected
+         */
+        this.base = [];
+
+        /**
+         * Transversals (Orbit Lookup Tables) for each level of the stabilizer chain.
+         * `transversals[i]` stores the orbit of `base[i]` under the group `G^(i)` (the stabilizer of `base[0], ..., base[i-1]`).
+         * Each map: `Key: Point p` in orbit, `Value: Permutation ID u` such that `u(base[i]) = p`.
+         * @type {Map[]}
+         * @protected
+         */
+        this.transversals = [];
+
+        /**
+         * Strong Generators for each level of the stabilizer chain.
+         * `generators[i]` is an array of permutation IDs that, along with the elements stabilizing `base[i]`,
+         * generate the stabilizer `G^(i)` (the subgroup fixing `base[0], ..., base[i-1]`).
+         * @type {number[][]}
+         * @protected
+         */
+        this.generators = [];
+
+        // Cache the Identity ID for fast comparison during sifting
+        this.idIdentity = this.repo.identity;
+
+        // Initialize user-provided base points
+        for (const point of initialBase) {
+            this._extendBase(point);
+        }
+    }
+
+    /**
+     * Factory method: Computes the Base and Strong Generating Set (BSGS) for a given set of generators.
+     * @param {PermutationSet|number[]} groupSet - The set of permutations that generate the group.
+     * @param {number[]} [initialBase=[]] - An optional array of points to serve as a prefix for the base.
+     * @returns {SchreierSimsAlgorithm} A new `SchreierSimsAlgorithm` instance with the computed BSGS.
+     * @static
+     */
+    static compute(groupSet, initialBase = []) {
+        const engine = new SchreierSimsAlgorithm(initialBase);
+        let ids ;
+        if(groupSet instanceof PermutationSet){
+          ids = groupSet.indices;
+        }else if(Array.isArray(groupSet) || ArrayBuffer.isView(groupSet)){
+            ids =groupSet;
+        }else{
+            throw new Error("unkown groupset type");
+        }
+        
+        for (let i = 0; i &lt; ids.length; i++) {
+            engine.siftAndInsert(ids[i]);
+        }
+        
+        return engine;
+    }
+
+    // ========================================================================
+    // Public API
+    // ========================================================================
+
+    /**
+     * Gets the current degree (number of points) on which the permutations act.
+     * This value is dynamically managed by the underlying `PermutationRepository`.
+     * @returns {number} The degree of the permutation group.
+     */
+    get degree() {
+        return this.repo.globalDegree;
+    }
+
+    /**
+     * Calculates the exact order (size) of the group represented by the BSGS.
+     * The order is computed as the product of the sizes of the orbits (transversals) at each level of the base.
+     * @returns {bigint} The order of the group as a BigInt, to support very large group orders.
+     */
+    get order() {
+        let size = 1n;
+        for (const t of this.transversals) {
+            size *= BigInt(t.size);
+        }
+        return size;
+    }
+
+    /**
+     * Returns a string representation.
+     * @returns {string} A result string.
+     */
+    toString() {
+        return `SSA(generators=${JSON.stringify(this.generators)}, degree=${this.degree}, order=${this.order})`;
+    }
+
+    /**
+     * Checks if a given permutation is an element of the group represented by this BSGS.
+     * The permutation is "sifted" through the stabilizer chain. If the process
+     * reduces the permutation to the identity element, it is in the group.
+     * @param {number|Int32Array|Array&lt;number>} perm - The permutation to check, either as an ID or a raw array.
+     * @returns {boolean} True if the permutation belongs to the group, false otherwise.
+     */
+    contains(perm) {
+        let permId = perm;
+        if (typeof perm !== 'number') {
+            permId = this.repo.register(perm);
+        }
+        const { residue } = this._strip(permId);
+        return residue === this.idIdentity;
+    }
+
+    /**
+     * Checks if the group acts transitively on a specified domain.
+     * A group is transitive if, for any two points `x` and `y` in the domain,
+     * there exists a group element `g` such that `g(x) = y`.
+     * This implementation checks if the orbit of the first base point (`base[0]`) under the full group
+     * covers the entire `domainSize`.
+     * @param {number} domainSize - The size of the domain (e.g., `globalDegree`) to check for transitivity.
+     * @returns {boolean} True if the group is transitive on the given domain, false otherwise.
+     */
+    isTransitive(domainSize) {
+        // Trivial cases
+        if (domainSize &lt;= 1) return true;
+
+        // If the group is Identity (empty base) but domain > 1, it cannot be transitive.
+        if (this.base.length === 0) return false;
+
+        // In the SSA chain, transversals[0] represents the orbit of base[0] under the full group G.
+        // For the group to be transitive on the set {0, ... domainSize-1}, 
+        // the orbit of the first base point must have size equal to domainSize.
+        // Note: This assumes base[0] is inside the domain. 
+        // If the group moves points outside the requested domain, this check implicitly handles it 
+        // (size would likely differ or logic implies user error).
+        return this.transversals[0].size === domainSize;
+    }
+
+    /**
+     * Computes the stabilizer subgroup G_p of a specific point `p`.
+     * G_p is defined as the set of all permutations `g` in the group G such that `g(p) = p`.
+     * @param {number} point - The point (0-based index) for which to compute the stabilizer.
+     * @returns {PermutationSet} A `PermutationSet` containing the generators of the stabilizer subgroup.
+     */
+    getStabilizer(point) {
+        // 1. Create a new SSA forcing 'point' to be the first element of the base.
+        // This guarantees that the first level of the chain stabilizes 'point'.
+        const stabSSA = new SchreierSimsAlgorithm([point]);
+        
+        // 2. Feed all strong generators of the current group into the new SSA.
+        // We use the flattened list of strong generators because they generate G.
+        const allGens = this.generators.flat();
+        for (const gen of allGens) {
+            stabSSA.siftAndInsert(gen);
+        }
+
+        // 3. Extract generators for G^(1).
+        // Since base[0] is 'point', the stabilizer G_p is exactly the subgroup 
+        // fixing the first base point, which corresponds to the chain elements 
+        // from level 1 onwards.
+        // Note: generators[0] contains elements that move 'point' (the coset representatives).
+        const stabilizerGens = stabSSA.generators.slice(1).flat();
+
+        // Return as a raw set (isGroup is nominally true, but we return generators)
+        return new PermutationSet(stabilizerGens, false, true);
+    }
+
+    /**
+     * Multiplies two permutations `idA` and `idB`.
+     * The convention is `(A * B)(x) = A(B(x))`, meaning `idB` is applied first, then `idA`.
+     * This method delegates to the underlying `PermutationRepository` for the actual multiplication.
+     * @param {number} idA - The ID of the first permutation (A).
+     * @param {number} idB - The ID of the second permutation (B).
+     * @returns {number} The ID of the resulting permutation (A * B).
+     * @private
+     */
+    multiply(idA, idB) {
+        return this.repo.multiply(idA, idB);
+    }
+
+    /**
+     * Computes or retrieves the inverse of a given permutation ID.
+     * This method delegates to the underlying `PermutationRepository` for inversion.
+     * @param {number} id - The ID of the permutation to invert.
+     * @returns {number} The ID of the inverse permutation.
+     * @private
+     */
+    inverse(id) {
+        return this.repo.inverse(id);
+    }
+
+    // ========================================================================
+    // Core Logic
+    // ========================================================================
+
+    /**
+     * The "Strip" (or Sift) procedure is a core component of the Schreier-Sims algorithm.
+     * It attempts to reduce a permutation `gId` to the identity by applying elements from the stabilizer chain.
+     * At each level `i`, if `gId` moves `base[i]` to `delta`, and `delta` is in the known orbit `transversals[i]`,
+     * `gId` is multiplied by the inverse of the representative `u` (where `u(base[i]) = delta`).
+     * This process continues until `gId` either becomes the identity or reaches a level where it moves `base[i]`
+     * to a point not in the current orbit.
+     * @param {number} gId - The permutation ID to be sifted.
+     * @returns {{residue: number, level: number}} An object containing:
+     *   - `residue`: The permutation ID remaining after sifting (identity if `gId` is in the group).
+     *   - `level`: The level in the stabilizer chain where sifting stopped (or `base.length` if sifted to identity).
+     * @private
+     */
+    _strip(gId) {
+        let curr = gId;
+        const depth = this.base.length;
+        const N = this.repo.globalDegree; 
+
+        for (let i = 0; i &lt; depth; i++) {
+            const beta = this.base[i];
+            
+            // Optimization: Direct buffer access to apply permutation
+            // delta = curr(beta)
+            const offset = curr * N;
+            const delta = this.repo.permBuffer[offset + beta];
+
+            // If curr already stabilizes beta, proceed to next level
+            if (delta === beta) continue;
+
+            // Check if delta is in the orbit of beta at this level
+            const traversal = this.transversals[i];
+            const u = traversal.get(delta);
+
+            if (u !== undefined) {
+                // Found representative u such that u(beta) = delta.
+                // We want to eliminate the movement of beta.
+                // new_curr = u^-1 * curr.
+                // Check: (u^-1 * curr)(beta) = u^-1(delta) = beta. Fixed.
+                
+                const uInv = this.inverse(u);
+                curr = this.multiply(uInv, curr);
+            } else {
+                // 'curr' moves beta to a point NOT in the current transversal.
+                // It cannot be reduced further. It belongs to this level (or extends it).
+                return { residue: curr, level: i };
+            }
+        }
+
+        // Sifted all the way through. If residue != Identity, it stabilizes the entire base.
+        return { residue: curr, level: depth };
+    }
+
+    /**
+     * The main incremental construction method for the BSGS.
+     * It sifts a given permutation `gId`. If `gId` is not already in the group generated by the current BSGS,
+     * the algorithm updates the stabilizer chain (`base`, `transversals`, `generators`) to include `gId`,
+     * ensuring that the BSGS correctly represents the expanded group.
+     * @param {number} gId - The permutation ID to be inserted into the BSGS.
+     */
+    siftAndInsert(gId) {
+        const { residue: h, level } = this._strip(gId);
+        
+        // If reduced to identity, the element is already generated by the group.
+        if (h === this.idIdentity) return;
+
+        // If the element fell through the bottom of the chain (stabilizes current base),
+        // we must extend the base to distinguish this element from identity.
+        if (level === this.base.length) {
+            const movedPoint = this._findFirstMovedPoint(h);
+            
+            // Should theoretically be impossible if h != identity, but safe-guard.
+            if (movedPoint === -1) return;
+            
+            this._extendBase(movedPoint);
+        }
+
+        // 1. Insert 'h' as a generator at the failing level.
+        // It expands the orbit at this level.
+        this._addGeneratorToLevel(level, h);
+
+        // 2. Back-propagation (Normal Closure Maintenance).
+        // Since 'h' stabilizes base[0]...base[level-1], it is formally a member
+        // of G^(0), G^(1), ..., G^(level-1).
+        // We must register it at those upper levels to ensure that we find any 
+        // new conjugates (u * h * u^-1) that might expand those upper levels.
+        for (let i = 0; i &lt; level; i++) {
+            this._addGeneratorToLevel(i, h);
+        }
+    }
+
+    /**
+     * Get generators as PermutationSet
+     * @returns {PermutationSet}
+     */
+    getGeneratorsAsPermutationSet(){
+        //this.generators[0] should be enough, but PermutationSet will do the clean up, so we keep the full flatted array for safe.
+        const flatIds = this.generators.flat();
+        return new PermutationSet(flatIds, false, false);
+    }
+    
+
+    /**
+     * Adds a new strong generator `hId` to the `generators` list at the specified `level`
+     * and triggers an update of the orbit (`transversal`) at that level.
+     * @param {number} level - The level in the stabilizer chain to which the generator is added.
+     * @param {number} hId - The ID of the permutation to add as a strong generator.
+     * @private
+     */
+    _addGeneratorToLevel(level, hId) {
+        this.generators[level].push(hId);
+        this._updateOrbit(level, hId);
+    }
+
+    /**
+     * Extends the base of the stabilizer chain by adding a new point.
+     * This creates a new level in the chain, initializing its generators and transversal.
+     * @param {number} point - The new point to be added to the base.
+     * @private
+     */
+    _extendBase(point) {
+        this.base.push(point);
+        this.generators.push([]);
+        
+        // Initialize transversal with { point -> Identity }
+        const map = new Map();
+        map.set(point, this.idIdentity);
+        this.transversals.push(map);
+    }
+
+    /**
+     * Updates the orbit (transversal) at a specified `level` of the stabilizer chain.
+     * This involves performing a Breadth-First Search (BFS) starting from existing orbit representatives
+     * and the new generator `hId`. During the BFS, any newly discovered Schreier generators
+     * (elements that stabilize `base[level]` but are not yet in the BSGS for `G^(level+1)`) are sifted and inserted.
+     * @param {number} level - The level in the stabilizer chain whose orbit needs updating.
+     * @param {number} hId - The ID of a newly added strong generator at this level.
+     * @private
+     */
+    _updateOrbit(level, hId) {
+        const transversal = this.transversals[level];
+        // Queue needs to store both the permutation ID and the point it reached
+        // so we can reconstruct the path correctly.
+        const queue = [];
+        
+        // Phase 1: Apply the NEW generator `hId` to all EXISTING representatives.
+        // We snapshot values() to avoid issues if the map grows during iteration.
+        const existingReps = Array.from(transversal.values());
+        for (const uRep of existingReps) {
+            this._processSchreierEdge(uRep, hId, level, queue);
+        }
+
+        // Phase 2: Standard BFS to close the orbit.
+        // Process any newly found representatives against ALL generators.
+        let ptr = 0;
+        const gens = this.generators[level];
+
+        while (ptr &lt; queue.length) {
+            const uRep = queue[ptr++];
+            
+            // Note: 'gens' is a reference. Even if back-propagation adds to it,
+            // we want to process those eventually.
+            // Using a standard for-loop with live length check ensures coverage.
+            for (let i = 0; i &lt; gens.length; i++) {
+                this._processSchreierEdge(uRep, gens[i], level, queue);
+            }
+        }
+    }
+
+    /**
+     * Processes a single edge (`uRep` --`sId`--> `cand`) in the Schreier graph during orbit construction.
+     * If `cand` maps to a new point in the orbit, it's added to the transversal and BFS queue.
+     * If `cand` maps to an already visited point, a Schreier generator (`v^-1 * cand`) is formed
+     * and recursively sifted to maintain the BSGS.
+     * @param {number} uRep - The permutation ID of the current orbit representative (`u`).
+     * @param {number} sId - The permutation ID of the generator (`s`) being applied.
+     * @param {number} level - The current level in the stabilizer chain.
+     * @param {number[]} queue - The Breadth-First Search work queue, storing permutation IDs.
+     * @private
+     */
+    _processSchreierEdge(uRep, sId, level, queue) {
+        // Calculate candidate permutation: cand = s * u
+        // (Applying u then s).
+        const cand = this.multiply(sId, uRep);
+        
+        const N = this.repo.globalDegree;
+        const beta = this.base[level];
+        
+        // Calculate image point: img = cand(beta)
+        const offset = cand * N;
+        const img = this.repo.permBuffer[offset + beta];
+
+        const transversal = this.transversals[level];
+
+        if (!transversal.has(img)) {
+            // Case 1: New point found in orbit.
+            // Register 'cand' as the representative for 'img'.
+            transversal.set(img, cand);
+            queue.push(cand);
+        } else {
+            // Case 2: Cycle found (Redundant path).
+            // We already have a representative 'v' for 'img'.
+            // The element (v^-1 * cand) stabilizes 'beta' (maps beta -> img -> beta).
+            // This is a Schreier generator. We must sift it to ensure the next level is complete.
+            
+            const v = transversal.get(img);
+            
+            // Optimization: If identical, it's the trivial identity, skip.
+            if (v === cand) return;
+
+            const vInv = this.inverse(v);
+            
+            // schreierGen = v^-1 * cand
+            const schreierGen = this.multiply(vInv, cand);
+
+            if (schreierGen !== this.idIdentity) {
+                // Recursively sift this new stabilizer element
+                this.siftAndInsert(schreierGen);
+            }
+        }
+    }
+
+    // ========================================================================
+    // Low-Level Helpers (Direct Memory Access)
+    // ========================================================================
+
+
+    /**
+     * Finds the smallest point (index) that is not fixed by the given permutation `permId`.
+     * This is typically used to select a new base point when extending the stabilizer chain.
+     * @param {number} permId - The ID of the permutation to analyze.
+     * @returns {number} The 0-based index of the first point moved by the permutation, or -1 if the permutation is the identity.
+     * @private
+     */
+    _findFirstMovedPoint(permId) {
+        const N = this.repo.globalDegree;
+        const offset = permId * N;
+        const buf = this.repo.permBuffer;
+        for (let i = 0; i &lt; N; i++) {
+            if (buf[offset + i] !== i) return i;
+        }
+        return -1;
+    }
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Tue Feb 03 2026 12:25:57 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

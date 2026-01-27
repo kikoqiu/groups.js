@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>group-private-utils.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="PermutationRepository.html">PermutationRepository</a><ul class='methods'><li data-type='method'><a href="PermutationRepository.html#commutator">commutator</a></li><li data-type='method'><a href="PermutationRepository.html#conjugate">conjugate</a></li><li data-type='method'><a href="PermutationRepository.html#get">get</a></li><li data-type='method'><a href="PermutationRepository.html#getAsCycles">getAsCycles</a></li><li data-type='method'><a href="PermutationRepository.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationRepository.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationRepository.html#register">register</a></li></ul></li><li><a href="PermutationSet.html">PermutationSet</a><ul class='methods'><li data-type='method'><a href="PermutationSet.html#calculateOrbit">calculateOrbit</a></li><li data-type='method'><a href="PermutationSet.html#difference">difference</a></li><li data-type='method'><a href="PermutationSet.html#equals">equals</a></li><li data-type='method'><a href="PermutationSet.html#generateGroupFromThis">generateGroupFromThis</a></li><li data-type='method'><a href="PermutationSet.html#get">get</a></li><li data-type='method'><a href="PermutationSet.html#intersection">intersection</a></li><li data-type='method'><a href="PermutationSet.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationSet.html#isAbelian">isAbelian</a></li><li data-type='method'><a href="PermutationSet.html#isSuperSetOf">isSuperSetOf</a></li><li data-type='method'><a href="PermutationSet.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationSet.html#rightCosetDecomposition">rightCosetDecomposition</a></li><li data-type='method'><a href="PermutationSet.html#slice">slice</a></li><li data-type='method'><a href="PermutationSet.html#toString">toString</a></li><li data-type='method'><a href="PermutationSet.html#union">union</a></li><li data-type='method'><a href="PermutationSet.html#.identity">identity</a></li></ul></li><li><a href="QuotientGroupMap.html">QuotientGroupMap</a><ul class='methods'><li data-type='method'><a href="QuotientGroupMap.html#lift">lift</a></li></ul></li><li><a href="SchreierSimsAlgorithm.html">SchreierSimsAlgorithm</a><ul class='methods'><li data-type='method'><a href="SchreierSimsAlgorithm.html#contains">contains</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getGeneratorsAsPermutationSet">getGeneratorsAsPermutationSet</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getStabilizer">getStabilizer</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#isTransitive">isTransitive</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#siftAndInsert">siftAndInsert</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#toString">toString</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#.compute">compute</a></li></ul></li><li><a href="VisualizerCayleyForceSimulator.html">VisualizerCayleyForceSimulator</a><ul class='methods'><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#getPlotlyFrame">getPlotlyFrame</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#tick">tick</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#warmup">warmup</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="IntSetUtils.html">IntSetUtils</a><ul class='methods'><li data-type='method'><a href="IntSetUtils.html#.difference">difference</a></li><li data-type='method'><a href="IntSetUtils.html#.has">has</a></li><li data-type='method'><a href="IntSetUtils.html#.intersection">intersection</a></li><li data-type='method'><a href="IntSetUtils.html#.sortAndUnique">sortAndUnique</a></li><li data-type='method'><a href="IntSetUtils.html#.union">union</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#analyzeGenerators">analyzeGenerators</a></li><li><a href="global.html#areIsomorphic">areIsomorphic</a></li><li><a href="global.html#calcApproxOrder">calcApproxOrder</a></li><li><a href="global.html#createAlternating">createAlternating</a></li><li><a href="global.html#createCyclic">createCyclic</a></li><li><a href="global.html#createDihedral">createDihedral</a></li><li><a href="global.html#createDirectProduct">createDirectProduct</a></li><li><a href="global.html#createFromCycleStrings">createFromCycleStrings</a></li><li><a href="global.html#createFromRawArrays">createFromRawArrays</a></li><li><a href="global.html#createIcosahedral">createIcosahedral</a></li><li><a href="global.html#createKleinFour">createKleinFour</a></li><li><a href="global.html#createOctahedral">createOctahedral</a></li><li><a href="global.html#createQuaternion">createQuaternion</a></li><li><a href="global.html#createSymmetric">createSymmetric</a></li><li><a href="global.html#createTetrahedral">createTetrahedral</a></li><li><a href="global.html#createTrivial">createTrivial</a></li><li><a href="global.html#decomposeToCycles">decomposeToCycles</a></li><li><a href="global.html#findCoxeterLikeGenerators">findCoxeterLikeGenerators</a></li><li><a href="global.html#findLowOrderGenerators">findLowOrderGenerators</a></li><li><a href="global.html#generateCayleyGraphForPlotly">generateCayleyGraphForPlotly</a></li><li><a href="global.html#generateGroup">generateGroup</a></li><li><a href="global.html#generateMultiplicationTable">generateMultiplicationTable</a></li><li><a href="global.html#generateNames">generateNames</a></li><li><a href="global.html#getCommutatorSubgroup">getCommutatorSubgroup</a></li><li><a href="global.html#getLowerCentralSeries">getLowerCentralSeries</a></li><li><a href="global.html#getMixedCommutatorSubgroup">getMixedCommutatorSubgroup</a></li><li><a href="global.html#getNormalClosure">getNormalClosure</a></li><li><a href="global.html#getQuotientStructure">getQuotientStructure</a></li><li><a href="global.html#getSylowSubgroup">getSylowSubgroup</a></li><li><a href="global.html#globalRepo">globalRepo</a></li><li><a href="global.html#isNilpotent">isNilpotent</a></li><li><a href="global.html#isNormal">isNormal</a></li><li><a href="global.html#isSimple">isSimple</a></li><li><a href="global.html#isSolvable">isSolvable</a></li><li><a href="global.html#isSubgroup">isSubgroup</a></li><li><a href="global.html#parseCycles">parseCycles</a></li><li><a href="global.html#resetGlobalRepo">resetGlobalRepo</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">group-private-utils.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { globalRepo } from './permutation-repository.js';
+
+// ============================================================================
+// Private Utils
+// ============================================================================
+
+/**
+ * Checks if a given number is a small prime.
+ * Uses trial division for efficiency with smaller numbers.
+ * @param {number} n - The number to check.
+ * @returns {boolean} True if the number is prime, false otherwise.
+ * @private
+ */
+export function _isSmallPrime(n) {
+    if (n &lt;= 1) return false;
+    if (n &lt;= 3) return true;
+    if (n % 2 === 0 || n % 3 === 0) return false;
+    for (let i = 5; i * i &lt;= n; i += 6) {
+        if (n % i === 0 || n % (i + 2) === 0) return false;
+    }
+    return true;
+}
+
+
+/**
+ * Generates a pseudo-random element from the group represented by the given `SchreierSimsAlgorithm` instance.
+ * @param {SchreierSimsAlgorithm} ssa - The `SchreierSimsAlgorithm` instance of the group.
+ * @returns {number} The ID of a randomly selected permutation from the group.
+ * @private
+ */
+export function _getRandomElement(ssa) {
+    // Generate random element from base/transversal structure
+    // g = t_1 * t_2 * ... * t_k
+    let result = ssa.repo.identity;
+    const depth = ssa.base.length;
+    
+    for (let i = 0; i &lt; depth; i++) {
+        const transversal = ssa.transversals[i];
+        // Efficient random pick from Map
+        const size = transversal.size;
+        const randIdx = Math.floor(Math.random() * size);
+        
+        // Iterating map is O(size), but transversal size is usually &lt;= Degree.
+        // For performance, SSA could store arrays, but Map is robust.
+        let k = 0;
+        for (const permId of transversal.values()) {
+            if (k === randIdx) {
+                result = ssa.repo.multiply(result, permId);
+                break;
+            }
+            k++;
+        }
+    }
+    return result;
+}
+
+
+
+
+/**
+ * Computes the exponentiation of a permutation: `gId^exp`.
+ * Uses binary exponentiation (exponentiation by squaring) for efficiency.
+ * @param {number} gId - The ID of the permutation (g).
+ * @param {number} exp - The integer exponent.
+ * @returns {number} The ID of the resulting permutation `gId^exp`.
+ * @private
+ */
+export function _pow(gId, exp) {
+    if (exp === 0) return globalRepo.identity;
+    if (exp === 1) return gId;
+    
+    let base = gId;
+    let result = globalRepo.identity;
+    let e = exp;
+
+    while (e > 0) {
+        if (e % 2 === 1) {
+            result = globalRepo.multiply(result, base);
+        }
+        base = globalRepo.multiply(base, base);
+        e = Math.floor(e / 2);
+    }
+    return result;
+}
+
+/**
+ * Computes the least common multiple (LCM) of two integers.
+ * @param {number} a - The first integer.
+ * @param {number} b - The second integer.
+ * @returns {number} The least common multiple of a and b.
+ * @private
+ */
+export function _lcm(a, b) {
+    if (a === 0 || b === 0) return 0;
+    return Math.abs((a * b) / _gcd(a, b));
+}
+
+/**
+ * Computes the greatest common divisor (GCD) of two integers using the Euclidean algorithm.
+ * @param {number} a - The first integer.
+ * @param {number} b - The second integer.
+ * @returns {number} The greatest common divisor of a and b.
+ * @private
+ */
+export function _gcd(a, b) {
+    while (b !== 0) {
+        let t = b;
+        b = a % b;
+        a = t;
+    }
+    return a;
+}
+
+/**
+ * Checks if a BigInt number `n` is a power of another BigInt `pBig`.
+ * For example, if `pBig` is 2, it checks if `n` is 2^k for some k >= 0.
+ * @param {bigint} n - The number to check.
+ * @param {bigint} pBig - The base number (must be > 1).
+ * @returns {boolean} True if `n` is a power of `pBig`, false otherwise.
+ * @private
+ */
+export function _isPowerOfP(n, pBig) {
+    let val = n;
+    while (val > 1n) {
+        if (val % pBig !== 0n) return false;
+        val /= pBig;
+    }
+    return true;
+}
+
+
+
+
+/**
+ * Extracts the p-part of a permutation `gId`.
+ * Given a permutation `g` with order `|g| = p^k * m`, where `gcd(p, m) = 1`,
+ * this function returns `g^m`, which is the p-part of `g` and has order `p^k`.
+ * @param {number} gId - The ID of the permutation (g).
+ * @param {number} p - The prime number p.
+ * @returns {number} The ID of the p-part of the permutation.
+ * @private
+ */
+export function _getPPart(gId, p) {    
+    const perm = globalRepo.get(gId);
+    const n = perm.length;
+    const visited = new Uint8Array(n);
+    let order = 1;
+
+    // 1. Calculate Order via LCM of disjoint cycles
+    for (let i = 0; i &lt; n; i++) {
+        if (visited[i]) continue;
+        
+        let curr = i;
+        let len = 0;
+        while (!visited[curr]) {
+            visited[curr] = 1;
+            curr = perm[curr];
+            len++;
+        }
+        if (len > 1) {
+            order = _lcm(order, len);
+        }
+    }
+
+    if (order === 1) return globalRepo.identity;
+
+    // 2. Factorize Order = p^k * m
+    let m = order;
+    while (m % p === 0) {
+        m /= p;
+    }
+
+    // 3. Compute g^m
+    // Binary exponentiation for permutations?
+    // Since m is integer, standard "repeated squaring" or just repeated multiply.
+    // For small m, linear is fine. For large m, binary is needed.
+    // Group Engine doesn't have `pow`. We implement a quick one.
+    
+    return _pow(gId, m);
+}
+
+/**
+ * Computes an approximate order of a permutation by finding the LCM of its cycle lengths.
+ * If the order exceeds limit, it returns limit+1 as a sentinel value.
+ * @param {*} perm - The permutation array.
+ * @param {number} [limit=60] - The upper limit for the order.
+ * @returns {number} - The approximate order of the permutation.
+ */
+export function calcApproxOrder(perm, limit=60) {
+    const n = perm.length;
+    const visited = new Uint8Array(n);
+    let lcm = 1;
+    for (let i = 0; i &lt; n; i++) {
+        if (visited[i]) continue;
+        let curr = i, len = 0;
+        while (!visited[curr]) {
+            visited[curr] = 1;
+            curr = perm[curr];
+            len++;
+        }
+        if (len > 0) {
+            lcm = _lcm(lcm, len);
+            if (lcm > limit) return limit;
+        }
+    }
+    return lcm;
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Tue Feb 03 2026 12:25:57 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>int-set-utils.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="PermutationRepository.html">PermutationRepository</a><ul class='methods'><li data-type='method'><a href="PermutationRepository.html#commutator">commutator</a></li><li data-type='method'><a href="PermutationRepository.html#conjugate">conjugate</a></li><li data-type='method'><a href="PermutationRepository.html#get">get</a></li><li data-type='method'><a href="PermutationRepository.html#getAsCycles">getAsCycles</a></li><li data-type='method'><a href="PermutationRepository.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationRepository.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationRepository.html#register">register</a></li></ul></li><li><a href="PermutationSet.html">PermutationSet</a><ul class='methods'><li data-type='method'><a href="PermutationSet.html#calculateOrbit">calculateOrbit</a></li><li data-type='method'><a href="PermutationSet.html#difference">difference</a></li><li data-type='method'><a href="PermutationSet.html#equals">equals</a></li><li data-type='method'><a href="PermutationSet.html#generateGroupFromThis">generateGroupFromThis</a></li><li data-type='method'><a href="PermutationSet.html#get">get</a></li><li data-type='method'><a href="PermutationSet.html#intersection">intersection</a></li><li data-type='method'><a href="PermutationSet.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationSet.html#isAbelian">isAbelian</a></li><li data-type='method'><a href="PermutationSet.html#isSuperSetOf">isSuperSetOf</a></li><li data-type='method'><a href="PermutationSet.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationSet.html#rightCosetDecomposition">rightCosetDecomposition</a></li><li data-type='method'><a href="PermutationSet.html#slice">slice</a></li><li data-type='method'><a href="PermutationSet.html#toString">toString</a></li><li data-type='method'><a href="PermutationSet.html#union">union</a></li><li data-type='method'><a href="PermutationSet.html#.identity">identity</a></li></ul></li><li><a href="QuotientGroupMap.html">QuotientGroupMap</a><ul class='methods'><li data-type='method'><a href="QuotientGroupMap.html#lift">lift</a></li></ul></li><li><a href="SchreierSimsAlgorithm.html">SchreierSimsAlgorithm</a><ul class='methods'><li data-type='method'><a href="SchreierSimsAlgorithm.html#contains">contains</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getGeneratorsAsPermutationSet">getGeneratorsAsPermutationSet</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getStabilizer">getStabilizer</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#isTransitive">isTransitive</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#siftAndInsert">siftAndInsert</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#toString">toString</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#.compute">compute</a></li></ul></li><li><a href="VisualizerCayleyForceSimulator.html">VisualizerCayleyForceSimulator</a><ul class='methods'><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#getPlotlyFrame">getPlotlyFrame</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#tick">tick</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#warmup">warmup</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="IntSetUtils.html">IntSetUtils</a><ul class='methods'><li data-type='method'><a href="IntSetUtils.html#.difference">difference</a></li><li data-type='method'><a href="IntSetUtils.html#.has">has</a></li><li data-type='method'><a href="IntSetUtils.html#.intersection">intersection</a></li><li data-type='method'><a href="IntSetUtils.html#.sortAndUnique">sortAndUnique</a></li><li data-type='method'><a href="IntSetUtils.html#.union">union</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#analyzeGenerators">analyzeGenerators</a></li><li><a href="global.html#areIsomorphic">areIsomorphic</a></li><li><a href="global.html#calcApproxOrder">calcApproxOrder</a></li><li><a href="global.html#createAlternating">createAlternating</a></li><li><a href="global.html#createCyclic">createCyclic</a></li><li><a href="global.html#createDihedral">createDihedral</a></li><li><a href="global.html#createDirectProduct">createDirectProduct</a></li><li><a href="global.html#createFromCycleStrings">createFromCycleStrings</a></li><li><a href="global.html#createFromRawArrays">createFromRawArrays</a></li><li><a href="global.html#createIcosahedral">createIcosahedral</a></li><li><a href="global.html#createKleinFour">createKleinFour</a></li><li><a href="global.html#createOctahedral">createOctahedral</a></li><li><a href="global.html#createQuaternion">createQuaternion</a></li><li><a href="global.html#createSymmetric">createSymmetric</a></li><li><a href="global.html#createTetrahedral">createTetrahedral</a></li><li><a href="global.html#createTrivial">createTrivial</a></li><li><a href="global.html#decomposeToCycles">decomposeToCycles</a></li><li><a href="global.html#findCoxeterLikeGenerators">findCoxeterLikeGenerators</a></li><li><a href="global.html#findLowOrderGenerators">findLowOrderGenerators</a></li><li><a href="global.html#generateCayleyGraphForPlotly">generateCayleyGraphForPlotly</a></li><li><a href="global.html#generateGroup">generateGroup</a></li><li><a href="global.html#generateMultiplicationTable">generateMultiplicationTable</a></li><li><a href="global.html#generateNames">generateNames</a></li><li><a href="global.html#getCommutatorSubgroup">getCommutatorSubgroup</a></li><li><a href="global.html#getLowerCentralSeries">getLowerCentralSeries</a></li><li><a href="global.html#getMixedCommutatorSubgroup">getMixedCommutatorSubgroup</a></li><li><a href="global.html#getNormalClosure">getNormalClosure</a></li><li><a href="global.html#getQuotientStructure">getQuotientStructure</a></li><li><a href="global.html#getSylowSubgroup">getSylowSubgroup</a></li><li><a href="global.html#globalRepo">globalRepo</a></li><li><a href="global.html#isNilpotent">isNilpotent</a></li><li><a href="global.html#isNormal">isNormal</a></li><li><a href="global.html#isSimple">isSimple</a></li><li><a href="global.html#isSolvable">isSolvable</a></li><li><a href="global.html#isSubgroup">isSubgroup</a></li><li><a href="global.html#parseCycles">parseCycles</a></li><li><a href="global.html#resetGlobalRepo">resetGlobalRepo</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">int-set-utils.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileoverview High-Performance Set Operations for Sorted Int32Arrays.
+ * 
+ * ASSUMPTIONS:
+ * 1. All input arrays are SORTED in ascending order.
+ * 2. All input arrays contain UNIQUE elements (no duplicates).
+ * 3. Designed for zero-GC overhead where possible, though result arrays are allocated.
+ */
+
+/**
+ * Provides high-performance utility functions for set operations on sorted Int32Arrays.
+ * All functions assume input arrays are sorted and contain unique elements.
+ * Designed for efficiency with minimal garbage collection overhead.
+ * @namespace IntSetUtils
+ */
+export const IntSetUtils = {
+
+    /**
+     * Binary Search for value existence.
+     * @param {Int32Array} sortedArr - The sorted array to search within.
+     * @param {number} value - The value to search for.
+     * @returns {boolean} True if the value is found in the array.
+     */
+    has(sortedArr, value) {
+        let left = 0;
+        let right = sortedArr.length - 1;
+
+        while (left &lt;= right) {
+            const mid = (left + right) >>> 1;
+            const v = sortedArr[mid];
+            if (v === value) return true;
+            if (v &lt; value) left = mid + 1;
+            else right = mid - 1;
+        }
+        return false;
+    },
+
+    /**
+     * Computes the union of two sorted Int32Arrays (A U B).
+     * The resulting array will contain all unique elements from both input arrays, sorted in ascending order.
+     * Linear time complexity O(|A| + |B|).
+     * @param {Int32Array} arrA - The first sorted Int32Array.
+     * @param {Int32Array} arrB - The second sorted Int32Array.
+     * @returns {Int32Array} A new sorted Int32Array containing the union of elements.
+     */
+    union(arrA, arrB) {
+        const lenA = arrA.length;
+        const lenB = arrB.length;
+        
+        // Fast paths
+        if (lenA === 0) return arrB.slice();
+        if (lenB === 0) return arrA.slice();
+
+        // Worst case size is sum of both
+        const res = new Int32Array(lenA + lenB);
+        let i = 0, j = 0, k = 0;
+
+        while (i &lt; lenA &amp;&amp; j &lt; lenB) {
+            const va = arrA[i];
+            const vb = arrB[j];
+
+            if (va &lt; vb) {
+                res[k++] = va;
+                i++;
+            } else if (va > vb) {
+                res[k++] = vb;
+                j++;
+            } else {
+                // Equal: add one, advance both
+                res[k++] = va;
+                i++; j++;
+            }
+        }
+
+        // Copy remaining parts
+        while (i &lt; lenA) res[k++] = arrA[i++];
+        while (j &lt; lenB) res[k++] = arrB[j++];
+
+        // Return exact fit (zero-copy view if possible, or slice)
+        return res.subarray(0, k);
+    },
+
+    /**
+     * Computes the intersection of two sorted Int32Arrays (A ∩ B).
+     * The resulting array will contain only the elements common to both input arrays, sorted in ascending order.
+     * Linear time complexity O(|A| + |B|).
+     * @param {Int32Array} arrA - The first sorted Int32Array.
+     * @param {Int32Array} arrB - The second sorted Int32Array.
+     * @returns {Int32Array} A new sorted Int32Array containing the intersection of elements.
+     */
+    intersection(arrA, arrB) {
+        const lenA = arrA.length;
+        const lenB = arrB.length;
+        
+        // Result cannot be larger than the smallest input
+        const res = new Int32Array(lenA &lt; lenB ? lenA : lenB);
+        let i = 0, j = 0, k = 0;
+
+        while (i &lt; lenA &amp;&amp; j &lt; lenB) {
+            const va = arrA[i];
+            const vb = arrB[j];
+
+            if (va &lt; vb) {
+                i++;
+            } else if (va > vb) {
+                j++;
+            } else {
+                res[k++] = va;
+                i++; j++;
+            }
+        }
+
+        return res.subarray(0, k);
+    },
+
+    /**
+     * Computes the difference of two sorted Int32Arrays (A - B).
+     * The resulting array will contain elements present in `arrA` but not in `arrB`, sorted in ascending order.
+     * Linear time complexity O(|A| + |B|).
+     * @param {Int32Array} arrA - The minuend sorted Int32Array.
+     * @param {Int32Array} arrB - The subtrahend sorted Int32Array.
+     * @returns {Int32Array} A new sorted Int32Array containing the difference (A - B) of elements.
+     */
+    difference(arrA, arrB) {
+        const lenA = arrA.length;
+        const lenB = arrB.length;
+        const res = new Int32Array(lenA);
+        let i = 0, j = 0, k = 0;
+
+        while (i &lt; lenA &amp;&amp; j &lt; lenB) {
+            const va = arrA[i];
+            const vb = arrB[j];
+
+            if (va &lt; vb) {
+                // In A, not in B -> Keep
+                res[k++] = va;
+                i++;
+            } else if (va > vb) {
+                // In B, not A -> Skip B
+                j++;
+            } else {
+                // In both -> Skip both
+                i++; j++;
+            }
+        }
+
+        // Copy remaining A
+        while (i &lt; lenA) res[k++] = arrA[i++];
+
+        return res.subarray(0, k);
+    },
+
+    /**
+     * Sorts an Int32Array in ascending order and removes duplicate elements.
+     * This function mutates the input array by sorting it in-place and then returns a subarray view
+     * containing only the unique elements.
+     * @param {Int32Array} rawArr - The Int32Array to sort and deduplicate. This array will be mutated.
+     * @returns {Int32Array} A subarray view of the input `rawArr` containing sorted unique elements.
+     */
+    sortAndUnique(rawArr) {
+        if (rawArr.length &lt;= 1) return rawArr;
+
+        // 1. Sort (Int32Array uses optimized native sort)
+        rawArr.sort();
+
+        // 2. Unique (Linear scan)
+        let k = 0;
+        const len = rawArr.length;
+        
+        for (let i = 0; i &lt; len; i++) {
+            // Always take first element, then take if different from previous
+            if (i === 0 || rawArr[i] !== rawArr[i-1]) {
+                rawArr[k++] = rawArr[i];
+            }
+        }
+
+        return rawArr.subarray(0, k);
+    }
+};</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Tue Feb 03 2026 12:25:57 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

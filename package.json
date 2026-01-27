@@ -1,0 +1,31 @@
+{
+  "name": "groupsjs",
+  "version": "0.1.1",
+  "main": "dist/groups.cjs",
+  "browser": "dist/groups.browser.js",
+  "module": "dist/groups.mjs",
+  "types": "dist/groups.d.ts",
+  "scripts": {
+    "lint": "eslint src/**",
+    "doc": "jsdoc -c jsdoc.json",
+    "test": "jest",
+    "build:types": "tsc -p .",
+    "build": "esbuild src/groups.js --bundle --outfile=dist/groups.mjs --format=esm --external:fs --external:path --external:util && esbuild src/groups.js --bundle --outfile=dist/groups.cjs --format=cjs --platform=node && esbuild src/groups.js --bundle --outfile=dist/groups.browser.js --format=iife --global-name=groups --external:fs --external:path --external:util"
+  },
+  "author": "qiu.kiko@gmail.com",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.28.6",
+    "@babel/preset-env": "^7.28.6",
+    "@eslint/js": "^9.39.2",
+    "babel-jest": "^30.2.0",
+    "docdash": "^2.0.2",
+    "esbuild": "^0.27.2",
+    "eslint": "^9.39.2",
+    "eslint-plugin-jsdoc": "^62.5.0",
+    "jest": "^30.2.0",
+    "jsdoc": "^4.0.5",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>QuotientGroupMap - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="PermutationRepository.html">PermutationRepository</a><ul class='methods'><li data-type='method'><a href="PermutationRepository.html#commutator">commutator</a></li><li data-type='method'><a href="PermutationRepository.html#conjugate">conjugate</a></li><li data-type='method'><a href="PermutationRepository.html#get">get</a></li><li data-type='method'><a href="PermutationRepository.html#getAsCycles">getAsCycles</a></li><li data-type='method'><a href="PermutationRepository.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationRepository.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationRepository.html#register">register</a></li></ul></li><li><a href="PermutationSet.html">PermutationSet</a><ul class='methods'><li data-type='method'><a href="PermutationSet.html#calculateOrbit">calculateOrbit</a></li><li data-type='method'><a href="PermutationSet.html#difference">difference</a></li><li data-type='method'><a href="PermutationSet.html#equals">equals</a></li><li data-type='method'><a href="PermutationSet.html#generateGroupFromThis">generateGroupFromThis</a></li><li data-type='method'><a href="PermutationSet.html#get">get</a></li><li data-type='method'><a href="PermutationSet.html#intersection">intersection</a></li><li data-type='method'><a href="PermutationSet.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationSet.html#isAbelian">isAbelian</a></li><li data-type='method'><a href="PermutationSet.html#isSuperSetOf">isSuperSetOf</a></li><li data-type='method'><a href="PermutationSet.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationSet.html#rightCosetDecomposition">rightCosetDecomposition</a></li><li data-type='method'><a href="PermutationSet.html#slice">slice</a></li><li data-type='method'><a href="PermutationSet.html#toString">toString</a></li><li data-type='method'><a href="PermutationSet.html#union">union</a></li><li data-type='method'><a href="PermutationSet.html#.identity">identity</a></li></ul></li><li><a href="QuotientGroupMap.html">QuotientGroupMap</a><ul class='methods'><li data-type='method'><a href="QuotientGroupMap.html#lift">lift</a></li></ul></li><li><a href="SchreierSimsAlgorithm.html">SchreierSimsAlgorithm</a><ul class='methods'><li data-type='method'><a href="SchreierSimsAlgorithm.html#contains">contains</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getGeneratorsAsPermutationSet">getGeneratorsAsPermutationSet</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getStabilizer">getStabilizer</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#isTransitive">isTransitive</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#siftAndInsert">siftAndInsert</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#toString">toString</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#.compute">compute</a></li></ul></li><li><a href="VisualizerCayleyForceSimulator.html">VisualizerCayleyForceSimulator</a><ul class='methods'><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#getPlotlyFrame">getPlotlyFrame</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#tick">tick</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#warmup">warmup</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="IntSetUtils.html">IntSetUtils</a><ul class='methods'><li data-type='method'><a href="IntSetUtils.html#.difference">difference</a></li><li data-type='method'><a href="IntSetUtils.html#.has">has</a></li><li data-type='method'><a href="IntSetUtils.html#.intersection">intersection</a></li><li data-type='method'><a href="IntSetUtils.html#.sortAndUnique">sortAndUnique</a></li><li data-type='method'><a href="IntSetUtils.html#.union">union</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#analyzeGenerators">analyzeGenerators</a></li><li><a href="global.html#areIsomorphic">areIsomorphic</a></li><li><a href="global.html#calcApproxOrder">calcApproxOrder</a></li><li><a href="global.html#createAlternating">createAlternating</a></li><li><a href="global.html#createCyclic">createCyclic</a></li><li><a href="global.html#createDihedral">createDihedral</a></li><li><a href="global.html#createDirectProduct">createDirectProduct</a></li><li><a href="global.html#createFromCycleStrings">createFromCycleStrings</a></li><li><a href="global.html#createFromRawArrays">createFromRawArrays</a></li><li><a href="global.html#createIcosahedral">createIcosahedral</a></li><li><a href="global.html#createKleinFour">createKleinFour</a></li><li><a href="global.html#createOctahedral">createOctahedral</a></li><li><a href="global.html#createQuaternion">createQuaternion</a></li><li><a href="global.html#createSymmetric">createSymmetric</a></li><li><a href="global.html#createTetrahedral">createTetrahedral</a></li><li><a href="global.html#createTrivial">createTrivial</a></li><li><a href="global.html#decomposeToCycles">decomposeToCycles</a></li><li><a href="global.html#findCoxeterLikeGenerators">findCoxeterLikeGenerators</a></li><li><a href="global.html#findLowOrderGenerators">findLowOrderGenerators</a></li><li><a href="global.html#generateCayleyGraphForPlotly">generateCayleyGraphForPlotly</a></li><li><a href="global.html#generateGroup">generateGroup</a></li><li><a href="global.html#generateMultiplicationTable">generateMultiplicationTable</a></li><li><a href="global.html#generateNames">generateNames</a></li><li><a href="global.html#getCommutatorSubgroup">getCommutatorSubgroup</a></li><li><a href="global.html#getLowerCentralSeries">getLowerCentralSeries</a></li><li><a href="global.html#getMixedCommutatorSubgroup">getMixedCommutatorSubgroup</a></li><li><a href="global.html#getNormalClosure">getNormalClosure</a></li><li><a href="global.html#getQuotientStructure">getQuotientStructure</a></li><li><a href="global.html#getSylowSubgroup">getSylowSubgroup</a></li><li><a href="global.html#globalRepo">globalRepo</a></li><li><a href="global.html#isNilpotent">isNilpotent</a></li><li><a href="global.html#isNormal">isNormal</a></li><li><a href="global.html#isSimple">isSimple</a></li><li><a href="global.html#isSolvable">isSolvable</a></li><li><a href="global.html#isSubgroup">isSubgroup</a></li><li><a href="global.html#parseCycles">parseCycles</a></li><li><a href="global.html#resetGlobalRepo">resetGlobalRepo</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">QuotientGroupMap</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+            QuotientGroupMap
+        
+        </h2>
+        
+            <div class="class-description usertext"><p>Represents a Quotient Group G/N, providing a mapping between
+elements of the quotient group (as permutations on coset indices)
+and their representatives in the original group G.</p></div>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="QuotientGroupMap"><span class="type-signature"></span>new QuotientGroupMap<span class="signature">(quotientGroup, representatives, quotientOrder)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="group-structural-utils.js.html">group-structural-utils.js</a>, <a href="group-structural-utils.js.html#line296">line 296</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>quotientGroup</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="PermutationSet.html">PermutationSet</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A PermutationSet whose elements act on the coset indices (0-based).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>representatives</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Int32Array</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An Int32Array where <code>representatives[i]</code> is a chosen representative from the i-th coset.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>quotientOrder</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">bigint</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The order of the quotient group, |G/N|.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="lift"><span class="type-signature"></span>lift<span class="signature">(quotientPermId)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Lifts a quotient group element (represented by a permutation ID) back to
+a specific representative element in the original group G.
+The returned element <code>g</code> is such that the quotient element corresponds to the coset <code>Ng</code>.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="group-structural-utils.js.html">group-structural-utils.js</a>, <a href="group-structural-utils.js.html#line316">line 316</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>quotientPermId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the permutation in the quotient group.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-throws">Throws:</h5>
+
+        
+
+<dl>
+    <dt>
+        <div class="param-desc usertext">
+        <p>If the <code>quotientPermId</code> maps to an invalid coset index.</p>
+        </div>
+    </dt>
+    <dd></dd>
+    <dt>
+        <dl class="param-type">
+            <dt>
+                Type
+            </dt>
+            <dd>
+                
+<span class="param-type">Error</span>
+
+
+
+            </dd>
+        </dl>
+    </dt>
+    <dd></dd>
+</dl>
+
+
+    
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The ID of a representative element in the original group G.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Tue Feb 03 2026 12:25:57 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

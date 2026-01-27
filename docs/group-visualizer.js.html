@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>group-visualizer.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="PermutationRepository.html">PermutationRepository</a><ul class='methods'><li data-type='method'><a href="PermutationRepository.html#commutator">commutator</a></li><li data-type='method'><a href="PermutationRepository.html#conjugate">conjugate</a></li><li data-type='method'><a href="PermutationRepository.html#get">get</a></li><li data-type='method'><a href="PermutationRepository.html#getAsCycles">getAsCycles</a></li><li data-type='method'><a href="PermutationRepository.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationRepository.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationRepository.html#register">register</a></li></ul></li><li><a href="PermutationSet.html">PermutationSet</a><ul class='methods'><li data-type='method'><a href="PermutationSet.html#calculateOrbit">calculateOrbit</a></li><li data-type='method'><a href="PermutationSet.html#difference">difference</a></li><li data-type='method'><a href="PermutationSet.html#equals">equals</a></li><li data-type='method'><a href="PermutationSet.html#generateGroupFromThis">generateGroupFromThis</a></li><li data-type='method'><a href="PermutationSet.html#get">get</a></li><li data-type='method'><a href="PermutationSet.html#intersection">intersection</a></li><li data-type='method'><a href="PermutationSet.html#inverse">inverse</a></li><li data-type='method'><a href="PermutationSet.html#isAbelian">isAbelian</a></li><li data-type='method'><a href="PermutationSet.html#isSuperSetOf">isSuperSetOf</a></li><li data-type='method'><a href="PermutationSet.html#multiply">multiply</a></li><li data-type='method'><a href="PermutationSet.html#rightCosetDecomposition">rightCosetDecomposition</a></li><li data-type='method'><a href="PermutationSet.html#slice">slice</a></li><li data-type='method'><a href="PermutationSet.html#toString">toString</a></li><li data-type='method'><a href="PermutationSet.html#union">union</a></li><li data-type='method'><a href="PermutationSet.html#.identity">identity</a></li></ul></li><li><a href="QuotientGroupMap.html">QuotientGroupMap</a><ul class='methods'><li data-type='method'><a href="QuotientGroupMap.html#lift">lift</a></li></ul></li><li><a href="SchreierSimsAlgorithm.html">SchreierSimsAlgorithm</a><ul class='methods'><li data-type='method'><a href="SchreierSimsAlgorithm.html#contains">contains</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getGeneratorsAsPermutationSet">getGeneratorsAsPermutationSet</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#getStabilizer">getStabilizer</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#isTransitive">isTransitive</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#siftAndInsert">siftAndInsert</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#toString">toString</a></li><li data-type='method'><a href="SchreierSimsAlgorithm.html#.compute">compute</a></li></ul></li><li><a href="VisualizerCayleyForceSimulator.html">VisualizerCayleyForceSimulator</a><ul class='methods'><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#getPlotlyFrame">getPlotlyFrame</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#tick">tick</a></li><li data-type='method'><a href="VisualizerCayleyForceSimulator.html#warmup">warmup</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="IntSetUtils.html">IntSetUtils</a><ul class='methods'><li data-type='method'><a href="IntSetUtils.html#.difference">difference</a></li><li data-type='method'><a href="IntSetUtils.html#.has">has</a></li><li data-type='method'><a href="IntSetUtils.html#.intersection">intersection</a></li><li data-type='method'><a href="IntSetUtils.html#.sortAndUnique">sortAndUnique</a></li><li data-type='method'><a href="IntSetUtils.html#.union">union</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#analyzeGenerators">analyzeGenerators</a></li><li><a href="global.html#areIsomorphic">areIsomorphic</a></li><li><a href="global.html#calcApproxOrder">calcApproxOrder</a></li><li><a href="global.html#createAlternating">createAlternating</a></li><li><a href="global.html#createCyclic">createCyclic</a></li><li><a href="global.html#createDihedral">createDihedral</a></li><li><a href="global.html#createDirectProduct">createDirectProduct</a></li><li><a href="global.html#createFromCycleStrings">createFromCycleStrings</a></li><li><a href="global.html#createFromRawArrays">createFromRawArrays</a></li><li><a href="global.html#createIcosahedral">createIcosahedral</a></li><li><a href="global.html#createKleinFour">createKleinFour</a></li><li><a href="global.html#createOctahedral">createOctahedral</a></li><li><a href="global.html#createQuaternion">createQuaternion</a></li><li><a href="global.html#createSymmetric">createSymmetric</a></li><li><a href="global.html#createTetrahedral">createTetrahedral</a></li><li><a href="global.html#createTrivial">createTrivial</a></li><li><a href="global.html#decomposeToCycles">decomposeToCycles</a></li><li><a href="global.html#findCoxeterLikeGenerators">findCoxeterLikeGenerators</a></li><li><a href="global.html#findLowOrderGenerators">findLowOrderGenerators</a></li><li><a href="global.html#generateCayleyGraphForPlotly">generateCayleyGraphForPlotly</a></li><li><a href="global.html#generateGroup">generateGroup</a></li><li><a href="global.html#generateMultiplicationTable">generateMultiplicationTable</a></li><li><a href="global.html#generateNames">generateNames</a></li><li><a href="global.html#getCommutatorSubgroup">getCommutatorSubgroup</a></li><li><a href="global.html#getLowerCentralSeries">getLowerCentralSeries</a></li><li><a href="global.html#getMixedCommutatorSubgroup">getMixedCommutatorSubgroup</a></li><li><a href="global.html#getNormalClosure">getNormalClosure</a></li><li><a href="global.html#getQuotientStructure">getQuotientStructure</a></li><li><a href="global.html#getSylowSubgroup">getSylowSubgroup</a></li><li><a href="global.html#globalRepo">globalRepo</a></li><li><a href="global.html#isNilpotent">isNilpotent</a></li><li><a href="global.html#isNormal">isNormal</a></li><li><a href="global.html#isSimple">isSimple</a></li><li><a href="global.html#isSolvable">isSolvable</a></li><li><a href="global.html#isSubgroup">isSubgroup</a></li><li><a href="global.html#parseCycles">parseCycles</a></li><li><a href="global.html#resetGlobalRepo">resetGlobalRepo</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">group-visualizer.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileoverview Group Visualization &amp; Representation Utilities.
+ * 
+ * This module transforms raw permutation data into human-readable structures
+ * suitable for UI rendering (GroupExplorer).
+ * 
+ * Key Features:
+ * 1. Generator Optimization (Redundancy check via SSA).
+ * 2. Semantic Naming (BFS-based word problem solver: e, a, b, ab...).
+ * 3. Cayley Table Generation (Matrix &amp; HTML with Semantic Coloring &amp; Tooltips).
+ */
+
+import { globalRepo } from './permutation-repository.js';
+import { decomposeToCycles } from './group-utils.js';
+import { analyzeGenerators } from './group-structural-utils.js';
+import { generateGroup, PermutationSet } from './group-engine.js';
+
+/**
+ * Generates human-readable algebraic names for all group elements (e.g., 'e', 'a', 'b', 'ab', 'a^2').
+ * This function uses a Breadth-First Search (BFS) approach, starting from the identity and generators,
+ * to construct the shortest and most intuitive names based on generator products.
+ * @param {number[]|PermutationSet} allElementIds - A sorted list of all unique permutation IDs belonging to the group.
+ * @param {number[]|PermutationSet} generatorIds - A list of permutation IDs that are the fundamental generators of the group.
+ * @param {string[]} [genLabels] - A list of strings that are the labels for the generators. Default to undefined means to use a,b,c,...
+ * @returns {Map&lt;number, string>} A Map where keys are permutation IDs and values are their corresponding generated algebraic names.
+ */
+export function generateNames(allElementIds, generatorIds, genLabels = undefined) {
+    if(allElementIds instanceof PermutationSet){
+        allElementIds = Array.from(allElementIds.indices);
+    }
+    if(generatorIds instanceof PermutationSet){
+        generatorIds = Array.from(generatorIds.indices);
+    }
+    if(analyzeGenerators(generatorIds).redundant?.length>0){
+        throw new Error("generateNames analyzeGenerators(generatorIds).redundant?.length>0");
+    }
+
+    const nameMap = new Map();
+    const visited = new Set();
+    
+    // 0. Setup Generators Labels
+    if(genLabels){
+        if(genLabels.length&lt;generatorIds.length){
+            throw new Error("genLabels.length&lt;generatorIds.length");
+        }
+    }else{
+        // Limit to 26 generators for single letters, otherwise use g1, g2...
+        genLabels = generatorIds.map((id, idx) => {
+            return idx &lt; 26 
+                ? String.fromCharCode(97 + idx) // 'a', 'b', ...
+                : `g${idx+1}`;
+        });
+    }
+
+    const genMap = new Map();
+    generatorIds.forEach((id, i) => genMap.set(id, genLabels[i]));
+
+    // 1. Initialize BFS
+    const queue = [];
+    const idIdentity = globalRepo.identity;
+    
+    // Explicitly name Identity
+    nameMap.set(idIdentity, 'e');
+    visited.add(idIdentity);
+    
+    // Seed queue with generators
+    for(let i = 0; i &lt; generatorIds.length; i++) {
+        const genId = generatorIds[i];
+        const label = genLabels[i];
+        
+        if (genId === idIdentity) continue;
+
+        nameMap.set(genId, label);
+        visited.add(genId);
+        queue.push({ id: genId, name: label, lastGen: label, power: 1 });
+    }
+
+    let head = 0;
+    while(head &lt; queue.length) {
+        const curr = queue[head++];
+        
+        // Try multiplying by every generator
+        for(let i = 0; i &lt; generatorIds.length; i++) {
+            const genId = generatorIds[i];
+            const genLabel = genLabels[i];
+
+            const nextId = globalRepo.multiply(curr.id, genId);
+
+            if (!visited.has(nextId)) {
+                visited.add(nextId);
+
+                // Name Generation Logic
+                let nextName = "";
+                let nextPower = 1;
+                
+                if (curr.lastGen === genLabel) {
+                    // Extension: a -> a^2
+                    const baseName = curr.power > 1 
+                        ? curr.name.substring(0, curr.name.lastIndexOf('^')) 
+                        : curr.name;
+                    
+                    nextPower = curr.power + 1;
+                    nextName = `${baseName}^${nextPower}`;
+                } else {
+                    // New generator direction
+                    nextName = `${curr.name}${genLabel}`;
+                    nextPower = 1;
+                }
+
+                nameMap.set(nextId, nextName);
+                queue.push({ 
+                    id: nextId, 
+                    name: nextName, 
+                    lastGen: genLabel, 
+                    power: nextPower 
+                });
+            }
+        }
+    }
+
+    // 3. Fallback for disconnected elements (sanity check)
+    for (const id of allElementIds) {
+        if (!nameMap.has(id)) {
+            nameMap.set(id, decomposeToCycles(id));
+        }
+    }
+
+    return nameMap;
+}
+
+
+/**
+ * Generates a Multiplication (Cayley) Table for a group.
+ * `inputIds` are treated as candidate generators. The function will determine a fundamental set of generators, expand the group to all its elements,
+ * and generate names for them. The table will represent the full group.
+ * 
+ * return an object
+ * A 2D array where `matrix[row][col]` is the permutation ID of `rowElement * colElement`.
+ * A 2D array where `grid[row][col]` is the algebraic name (string) of `rowElement * colElement`.
+ * A Map where keys are permutation IDs and values are their 1-based cycle notation strings (e.g., "(1 2 3)").
+ * An HTML string representation of the Cayley table with semantic coloring and tooltips.
+ * 
+ * @param {number[]} inputIds - An array of candidate generator IDs.
+ * @param {Map&lt;number, string>} [nameMap=null] - Optional. A custom map of all permutation IDs to their display names. Use generateNames to generate.
+ * @see generateNames
+ * @returns {{
+ *   matrix: number[][],
+ *   grid: string[][],
+ *   cycleMap: Map&lt;number, string>,
+ *   html: string,
+ *   nameMap: Map&lt;number, string>
+ * }} An object containing the generated table data.
+ * 
+ * @throws {Error} If `nameMap` is provided in manual mode but is incomplete (missing names for `inputIds`).
+ */
+export function generateMultiplicationTable(inputIds, nameMap = null) {
+    let tableElements;
+    let finalNames = nameMap;
+
+    // Step A: Analyze and clean generators
+    const analysis = analyzeGenerators(inputIds);
+    const fundamentalGens = analysis.fundamental;
+
+    // Step B: Expand to find the Full Group
+    tableElements = Array.from(generateGroup(fundamentalGens).indices);
+
+    // Input is Generators -> Output is Full Table
+    if (!finalNames) {
+        finalNames = generateNames(tableElements, fundamentalGens);
+    }
+    else {
+        // Ensure every element has a name
+        for (const id of tableElements) {
+            if (!finalNames.has(id)) {
+                throw new Error(`Insufficient names: Element ID ${id} is missing from nameMap.`);
+            }
+        }
+    }
+
+    const size = tableElements.length;
+    const matrix = new Array(size);
+    const grid = new Array(size);
+    const cycleMap = new Map();
+
+    // Pre-calculate cycle notations for all elements in the table
+    // (Using globalRepo.getAsCycles is efficient)
+    for (const id of tableElements) {
+        if (!cycleMap.has(id)) {
+            cycleMap.set(id, globalRepo.getAsCycles(id));
+        }
+    }
+    
+    for (let r = 0; r &lt; size; r++) {
+        matrix[r] = new Int32Array(size);
+        grid[r] = new Array(size);
+        
+        const rowId = tableElements[r];
+        
+        for (let c = 0; c &lt; size; c++) {
+            const colId = tableElements[c];
+            const resId = globalRepo.multiply(rowId, colId);
+            
+            matrix[r][c] = resId;
+            grid[r][c] = finalNames.get(resId);
+            
+            // Ensure cycle map has the result (should be in tableElements if closed, 
+            // but safe to add if strictly multiplying outside closure in manual mode)
+            if (!cycleMap.has(resId)) {
+                cycleMap.set(resId, globalRepo.getAsCycles(resId));
+            }
+        }
+    }
+
+    // Pass matrix and cycleMap to helper for color lookup and tooltips
+    const html = _renderHtmlTable(tableElements, grid, matrix, finalNames, cycleMap);
+    return { matrix, grid, cycleMap, html, nameMap:finalNames };
+}
+
+/**
+ * Renders an HTML string representation of a Cayley multiplication table.
+ * The table includes semantic coloring, algebraic names, and cycle notation tooltips.
+ * @param {number[]} elements - An array of permutation IDs representing the elements that form the table headers (both row and column).
+ * @param {string[][]} grid - A 2D array of string names for the elements in the table cells.
+ * @param {number[][]} matrix - A 2D array of permutation IDs for the elements in the table cells, used for coloring and cycle lookup.
+ * @param {Map&lt;number, string>} nameMap - A map from permutation ID to its algebraic name (e.g., 'e', 'a', 'ab').
+ * @param {Map&lt;number, string>} cycleMap - A map from permutation ID to its 1-based cycle notation string (e.g., "(1 2 3)").
+ * @returns {string} An HTML string containing the formatted Cayley table.
+ * @private
+ */
+function _renderHtmlTable(elements, grid, matrix, nameMap, cycleMap) {
+    const size = elements.length;
+    const idIdentity = globalRepo.identity;
+
+    // 1. Generate Color Map (HSL)
+    const colorMap = new Map();
+    colorMap.set(idIdentity, '#ffffff');
+
+    for (let i = 0; i &lt; size; i++) {
+        const id = elements[i];
+        if (id === idIdentity) continue;
+        const hue = Math.floor((i / size) * 360); 
+        colorMap.set(id, `hsl(${hue}, 80%, 85%)`);
+    }
+
+    // Helper for name formatting
+    const formatName = (name) => name.replace(/\^(\d+)/g, "&lt;sup>$1&lt;/sup>");
+
+    // Common Styles
+    const tableStyle = 'border-collapse: collapse; text-align: center; font-family: sans-serif; cursor: default;';
+    const cellStyleBase = 'padding: 8px; border: 1px solid #ccc; min-width: 30px;';
+
+    let html = `&lt;table class="cayley-table" style="${tableStyle}">\n`;
+
+    // 2. Header Row
+    html += '  &lt;thead>\n    &lt;tr>\n';
+    html += `      &lt;th class="cayley-corner" style="${cellStyleBase} background-color: #f0f0f0;">×&lt;/th>\n`;
+    
+    for (let i = 0; i &lt; size; i++) {
+        const id = elements[i];
+        const name = formatName(nameMap.get(id));
+        const cycles = cycleMap.get(id);
+        const bg = colorMap.get(id);
+        
+        html += `      &lt;th class="cayley-header" title="${cycles}" style="${cellStyleBase} background-color: ${bg};">${name}&lt;/th>\n`;
+    }
+    html += '    &lt;/tr>\n  &lt;/thead>\n';
+
+    // 3. Body
+    html += '  &lt;tbody>\n';
+    for (let r = 0; r &lt; size; r++) {
+        const rowId = elements[r];
+        const rowName = formatName(nameMap.get(rowId));
+        const rowCycles = cycleMap.get(rowId);
+        const rowBg = colorMap.get(rowId);
+        
+        html += '    &lt;tr>\n';
+        
+        // Row Header
+        html += `      &lt;th class="cayley-header" title="${rowCycles}" style="${cellStyleBase} background-color: ${rowBg};">${rowName}&lt;/th>\n`;
+
+        for (let c = 0; c &lt; size; c++) {
+            const rawName = grid[r][c];
+            const valName = formatName(rawName); // Apply superscript
+            const valId = matrix[r][c];
+            const valCycles = cycleMap.get(valId);
+            
+            const cellBg = colorMap.get(valId);
+            const isIdentity = (valId === idIdentity);
+            const cellClass = isIdentity ? 'cayley-cell cayley-identity' : 'cayley-cell';
+            
+            html += `      &lt;td class="${cellClass}" title="${valCycles}" style="${cellStyleBase} background-color: ${cellBg};">${valName}&lt;/td>\n`;
+        }
+        html += '    &lt;/tr>\n';
+    }
+    html += '  &lt;/tbody>\n&lt;/table>';
+
+    return html;
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Tue Feb 03 2026 12:25:57 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>
