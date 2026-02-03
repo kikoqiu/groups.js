@@ -1,5 +1,5 @@
 {
-  "name": "groupsjs",
+  "name": "@kikoqiu/groups.js",
   "version": "0.1.1",
   "main": "dist/groups.cjs",
   "browser": "dist/groups.browser.js",
@@ -27,5 +27,8 @@
     "jest": "^30.2.0",
     "jsdoc": "^4.0.5",
     "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
