@@ -17,9 +17,9 @@ This project provides a high-performance JavaScript library for computational gr
 Assuming you have Node.js and npm/yarn installed:
 
 ```bash
-npm install groupsjs
+npm i @kikoqiu/groups.js
 # or
-yarn add groupsjs
+yarn add @kikoqiu/groups.js
 ```
 
 If you are running this project locally, you can clone the repository:
